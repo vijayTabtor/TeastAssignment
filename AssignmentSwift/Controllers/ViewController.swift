@@ -50,7 +50,14 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let paddingSpace = CGFloat(20 * (columnCount + 1))
         let availabelWidth = self.view.frame.width - paddingSpace
-        return CGSize(width:(availabelWidth)/columnCount, height: 427)
+        
+        if UIDevice.current.orientation == UIDeviceOrientation.landscapeLeft  || UIDevice.current.orientation == UIDeviceOrientation.landscapeRight {
+            columnCount = 3
+        } else if UIDevice.current.orientation == UIDeviceOrientation.portrait {
+            columnCount = 2
+        }
+
+        return CGSize(width:(availabelWidth)/columnCount, height: 340)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
@@ -61,7 +68,9 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         return 20.0
     }
     
-   
+    override func viewWillLayoutSubviews() {
+       self.userCollectionView.layoutIfNeeded()
+    }
 }
 
 //MARK: - SearchBar delegate

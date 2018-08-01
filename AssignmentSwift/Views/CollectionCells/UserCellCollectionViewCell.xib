@@ -13,32 +13,35 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cellIdentifire" id="HyD-rq-eC7" customClass="UserCellCollectionViewCell" customModule="AssignmentSwift" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="264" height="427"/>
+            <rect key="frame" x="0.0" y="0.0" width="264" height="340"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="264" height="427"/>
+                <rect key="frame" x="0.0" y="0.0" width="264" height="340"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Zta-k4-uAP">
-                        <rect key="frame" x="0.0" y="0.0" width="264" height="340"/>
+                        <rect key="frame" x="0.0" y="0.0" width="264" height="250"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="340" id="Jfa-6V-c7j"/>
+                            <constraint firstAttribute="height" constant="250" id="Jfa-6V-c7j"/>
                         </constraints>
                     </imageView>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3zh-zR-Oan">
-                        <rect key="frame" x="0.0" y="340" width="264" height="87"/>
+                        <rect key="frame" x="0.0" y="250" width="264" height="90"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mRI-eY-LIW">
-                                <rect key="frame" x="15" y="8" width="239" height="40"/>
+                                <rect key="frame" x="15" y="8" width="239" height="45"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="ud0-SV-Q4b"/>
+                                    <constraint firstAttribute="height" constant="45" id="ud0-SV-Q4b"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="Div-0D-a6b">
-                                <rect key="frame" x="15" y="56" width="239" height="18"/>
+                                <rect key="frame" x="15" y="56" width="239" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="VMc-qx-p6G"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -49,7 +52,7 @@
                             <constraint firstItem="mRI-eY-LIW" firstAttribute="top" secondItem="3zh-zR-Oan" secondAttribute="top" constant="8" id="496-Ig-5cx"/>
                             <constraint firstItem="Div-0D-a6b" firstAttribute="leading" secondItem="3zh-zR-Oan" secondAttribute="leading" constant="15" id="C6d-MQ-X08"/>
                             <constraint firstAttribute="trailing" secondItem="mRI-eY-LIW" secondAttribute="trailing" constant="10" id="IpH-Au-6Qj"/>
-                            <constraint firstItem="Div-0D-a6b" firstAttribute="top" secondItem="mRI-eY-LIW" secondAttribute="bottom" constant="8" id="opG-L8-Bcp"/>
+                            <constraint firstItem="Div-0D-a6b" firstAttribute="top" secondItem="mRI-eY-LIW" secondAttribute="bottom" constant="3" id="opG-L8-Bcp"/>
                             <constraint firstAttribute="trailing" secondItem="Div-0D-a6b" secondAttribute="trailing" constant="10" id="pjL-9P-pq4"/>
                         </constraints>
                     </view>
@@ -66,13 +69,13 @@
                 <constraint firstAttribute="trailing" secondItem="Zta-k4-uAP" secondAttribute="trailing" id="wNa-7h-GYh"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="dGV-WD-1g8"/>
-            <size key="customSize" width="264" height="427"/>
+            <size key="customSize" width="264" height="341"/>
             <connections>
                 <outlet property="profileImageView" destination="Zta-k4-uAP" id="rEB-yG-QbU"/>
                 <outlet property="tagLineLabel" destination="Div-0D-a6b" id="WSx-mv-XLK"/>
                 <outlet property="userNameLabel" destination="mRI-eY-LIW" id="csZ-M4-nNb"/>
             </connections>
-            <point key="canvasLocation" x="-108" y="-48.5"/>
+            <point key="canvasLocation" x="-108" y="-92"/>
         </collectionViewCell>
     </objects>
 </document>
