@@ -22,7 +22,7 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     var filtered:[Book] = []
     
     init() {
-        super.init(nibName: "PersonView", bundle: nil)
+        super.init(nibName: "BookView", bundle: nil)
     }
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
