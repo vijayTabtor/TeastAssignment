@@ -42,6 +42,10 @@
 		B1193FE92110C92C00CDC171 /* arrow-right@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B1193FDD2110C92C00CDC171 /* arrow-right@3x.png */; };
 		B1193FEA2110C92C00CDC171 /* search-cross.png in Resources */ = {isa = PBXBuildFile; fileRef = B1193FDE2110C92C00CDC171 /* search-cross.png */; };
 		B1193FEC21116E8800CDC171 /* BookView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B1193FEB21116E8800CDC171 /* BookView.xib */; };
+		B1A733B0211758310033FA65 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B1A733AF211758300033FA65 /* GoogleService-Info.plist */; };
+		B1A733B1211758310033FA65 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B1A733AF211758300033FA65 /* GoogleService-Info.plist */; };
+		B1A733B2211758310033FA65 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B1A733AF211758300033FA65 /* GoogleService-Info.plist */; };
+		B1D56E8E21137AEF0059FBCA /* DataHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D56E8D21137AEF0059FBCA /* DataHandler.swift */; };
 		D8627C8A5FF8BB78CD559A1D /* Pods_AssignmentSwiftUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F0CA9EF3BDC3D34752DD0DA /* Pods_AssignmentSwiftUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -103,6 +107,9 @@
 		B1193FDD2110C92C00CDC171 /* arrow-right@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "arrow-right@3x.png"; sourceTree = "<group>"; };
 		B1193FDE2110C92C00CDC171 /* search-cross.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "search-cross.png"; sourceTree = "<group>"; };
 		B1193FEB21116E8800CDC171 /* BookView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = BookView.xib; path = AssignmentSwift/Views/BookView.xib; sourceTree = SOURCE_ROOT; };
+		B1A733AF211758300033FA65 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B1A733B321175A340033FA65 /* AssignmentSwift.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AssignmentSwift.entitlements; sourceTree = "<group>"; };
+		B1D56E8D21137AEF0059FBCA /* DataHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataHandler.swift; sourceTree = "<group>"; };
 		DF79069D4DF831272A1FC4B1 /* Pods-AssignmentSwiftTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AssignmentSwiftTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AssignmentSwiftTests/Pods-AssignmentSwiftTests.debug.xcconfig"; sourceTree = "<group>"; };
 		EEEFE8A19B7D5DEB98C192C6 /* Pods_AssignmentSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AssignmentSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -157,6 +164,7 @@
 		536D62F01FFF9351006D0F21 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				B1D56E8C21137AD80059FBCA /* Services */,
 				536D62FC1FFF9855006D0F21 /* User.swift */,
 			);
 			path = Models;
@@ -197,6 +205,8 @@
 		53E70D131FFE85AB006CE540 /* AssignmentSwift */ = {
 			isa = PBXGroup;
 			children = (
+				B1A733B321175A340033FA65 /* AssignmentSwift.entitlements */,
+				B1A733AF211758300033FA65 /* GoogleService-Info.plist */,
 				536D62F01FFF9351006D0F21 /* Models */,
 				536D62EF1FFF9338006D0F21 /* Views */,
 				53E70D141FFE85AB006CE540 /* AppDelegate.swift */,
@@ -277,6 +287,14 @@
 			path = images;
 			sourceTree = "<group>";
 		};
+		B1D56E8C21137AD80059FBCA /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				B1D56E8D21137AEF0059FBCA /* DataHandler.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		EF262E8FE6195544561C9632 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -299,6 +317,7 @@
 				53E70D0E1FFE85AB006CE540 /* Frameworks */,
 				53E70D0F1FFE85AB006CE540 /* Resources */,
 				ACFBB4033F695319C9134CF1 /* [CP] Embed Pods Frameworks */,
+				B1A733B421175BA20033FA65 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -355,12 +374,20 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = "Vijay Chavre";
 				TargetAttributes = {
 					53E70D101FFE85AB006CE540 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 					53E70D241FFE85AB006CE540 = {
 						CreatedOnToolsVersion = 9.2;
@@ -416,6 +443,7 @@
 				B1193FE22110C92C00CDC171 /* left-arrow@3x.png in Resources */,
 				536D62F91FFF96AC006D0F21 /* UserCellCollectionViewCell.xib in Resources */,
 				53E70D1A1FFE85AB006CE540 /* Main.storyboard in Resources */,
+				B1A733B0211758310033FA65 /* GoogleService-Info.plist in Resources */,
 				B1193FE42110C92C00CDC171 /* search-cross@3x.png in Resources */,
 				B1193FEA2110C92C00CDC171 /* search-cross.png in Resources */,
 			);
@@ -426,6 +454,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				536D62FA1FFF96AC006D0F21 /* UserCellCollectionViewCell.xib in Resources */,
+				B1A733B1211758310033FA65 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -434,6 +463,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				536D62FB1FFF96AC006D0F21 /* UserCellCollectionViewCell.xib in Resources */,
+				B1A733B2211758310033FA65 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -522,19 +552,40 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-AssignmentSwift/Pods-AssignmentSwift-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/AEXML/AEXML.framework",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/EpubExtractor/EpubExtractor.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
 				"${BUILT_PRODUCTS_DIR}/SSZipArchive/SSZipArchive.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AEXML.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EpubExtractor.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SSZipArchive.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AssignmentSwift/Pods-AssignmentSwift-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		B1A733B421175BA20033FA65 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\" a5c55ea3f1775439d355e0604620d66da2305f7e 3d2f0b700b04165b921ec547081dc8002c53c021108f337d823250bef7edf7a2";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -545,6 +596,7 @@
 			files = (
 				53E70D171FFE85AB006CE540 /* ViewController.swift in Sources */,
 				B1193FCF2110C67B00CDC171 /* TopicTableViewCell.swift in Sources */,
+				B1D56E8E21137AEF0059FBCA /* DataHandler.swift in Sources */,
 				536D62FD1FFF9855006D0F21 /* User.swift in Sources */,
 				53E70D151FFE85AB006CE540 /* AppDelegate.swift in Sources */,
 				B1193FCA2110C5EB00CDC171 /* TopicsViewController.swift in Sources */,
@@ -621,6 +673,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -628,6 +681,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -678,6 +732,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -685,6 +740,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -719,6 +775,7 @@
 			baseConfigurationReference = 41F8A06F1260FCBB1AA90330 /* Pods-AssignmentSwift.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = AssignmentSwift/AssignmentSwift.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 528CW28SYR;
 				INFOPLIST_FILE = AssignmentSwift/Info.plist;
@@ -736,6 +793,7 @@
 			baseConfigurationReference = 7292EF2CEA093C140EC70117 /* Pods-AssignmentSwift.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = AssignmentSwift/AssignmentSwift.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 528CW28SYR;
 				INFOPLIST_FILE = AssignmentSwift/Info.plist;

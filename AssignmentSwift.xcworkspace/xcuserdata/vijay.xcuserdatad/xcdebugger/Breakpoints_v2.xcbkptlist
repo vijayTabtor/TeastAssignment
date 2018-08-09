@@ -10,7 +10,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AssignmentSwift/Controllers/ViewController.swift"
-            timestampString = "554918321.018387"
+            timestampString = "555178212.4141901"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "46"
@@ -26,7 +26,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AssignmentSwift/Controllers/ViewController.swift"
-            timestampString = "554918321.018472"
+            timestampString = "555178212.414272"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "138"
@@ -42,7 +42,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AssignmentSwift/Controllers/ViewController.swift"
-            timestampString = "554918321.018522"
+            timestampString = "555178212.414326"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "119"
@@ -58,7 +58,7 @@
                   moduleName = "AssignmentSwift"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/vijay/Documents/TabtorGitHub/TeastAssignment/AssignmentSwift/Controllers/ViewController.swift"
-                  timestampString = "554918269.505381"
+                  timestampString = "554962800.914603"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "119"
@@ -73,7 +73,7 @@
                   moduleName = "AssignmentSwift"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/vijay/Documents/TabtorGitHub/TeastAssignment/AssignmentSwift/Controllers/ViewController.swift"
-                  timestampString = "554918269.507259"
+                  timestampString = "554962800.918249"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "120"
@@ -96,6 +96,22 @@
             startingLineNumber = "61"
             endingLineNumber = "61"
             landmarkName = "tableView(_:didSelectRowAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AssignmentSwift/Models/Services/DataHandler.swift"
+            timestampString = "554963210.679304"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
+            landmarkName = "startDownload(urlString:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
