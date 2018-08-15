@@ -1,3 +1,96 @@
-PODFILE CHECKSUM: 60ceea21ff4a24fbf0b9b87e84d967c5b4fb7979
+PODS:
+  - AEXML (4.0.2)
+  - Alamofire (4.7.3)
+  - Crashlytics (3.10.5):
+    - Fabric (~> 1.7.9)
+  - EpubExtractor (0.1.1):
+    - AEXML (~> 4.0.2)
+    - SSZipArchive (~> 1.7)
+  - Fabric (1.7.9)
+  - Firebase/Core (5.4.1):
+    - Firebase/CoreOnly
+    - FirebaseAnalytics (= 5.0.1)
+  - Firebase/CoreOnly (5.4.1):
+    - FirebaseCore (= 5.0.6)
+  - Firebase/Messaging (5.4.1):
+    - Firebase/CoreOnly
+    - FirebaseMessaging (= 3.0.3)
+  - FirebaseAnalytics (5.0.1):
+    - FirebaseCore (~> 5.0)
+    - FirebaseInstanceID (~> 3.0)
+    - "GoogleToolboxForMac/NSData+zlib (~> 2.1)"
+    - nanopb (~> 0.3)
+  - FirebaseCore (5.0.6):
+    - "GoogleToolboxForMac/NSData+zlib (~> 2.1)"
+  - FirebaseInstanceID (3.1.1):
+    - FirebaseCore (~> 5.0)
+  - FirebaseMessaging (3.0.3):
+    - FirebaseCore (~> 5.0)
+    - FirebaseInstanceID (~> 3.0)
+    - GoogleToolboxForMac/Logger (~> 2.1)
+    - Protobuf (~> 3.1)
+  - GoogleToolboxForMac/Defines (2.1.4)
+  - GoogleToolboxForMac/Logger (2.1.4):
+    - GoogleToolboxForMac/Defines (= 2.1.4)
+  - "GoogleToolboxForMac/NSData+zlib (2.1.4)":
+    - GoogleToolboxForMac/Defines (= 2.1.4)
+  - nanopb (0.3.8):
+    - nanopb/decode (= 0.3.8)
+    - nanopb/encode (= 0.3.8)
+  - nanopb/decode (0.3.8)
+  - nanopb/encode (0.3.8)
+  - Nimble (5.1.1)
+  - Protobuf (3.6.0)
+  - Quick (1.1.0)
+  - SSZipArchive (1.8.1)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.7)
+  - Crashlytics
+  - EpubExtractor
+  - Fabric
+  - Firebase/Core
+  - Firebase/Messaging
+  - Nimble (~> 5.1.1)
+  - Quick (~> 1.1.0)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - AEXML
+    - Alamofire
+    - Crashlytics
+    - EpubExtractor
+    - Fabric
+    - Firebase
+    - FirebaseAnalytics
+    - FirebaseCore
+    - FirebaseInstanceID
+    - FirebaseMessaging
+    - GoogleToolboxForMac
+    - nanopb
+    - Nimble
+    - Protobuf
+    - Quick
+    - SSZipArchive
+
+SPEC CHECKSUMS:
+  AEXML: 7de81f28c6c876a210f31924acc2e326cd01e162
+  Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
+  Crashlytics: 7f2e38d302d9da96475b3d64d86fb29e31a542b7
+  EpubExtractor: dedc92cc7a7f26bba4677cb3fca1a4ff56163677
+  Fabric: a2917d3895e4c1569b9c3170de7320ea1b1e6661
+  Firebase: 355bd535bfdacaa82a7fe8d9784115edefd6fc03
+  FirebaseAnalytics: b3628aea54c50464c32c393fb2ea032566e7ecc2
+  FirebaseCore: 4c28e3b9708ba48a765e76515f913a71596eb5dd
+  FirebaseInstanceID: f3f0657372592ecdfdfe2cac604a5a75758376a6
+  FirebaseMessaging: f43eb0c0e1da096e659de6f713038e74862a62cd
+  GoogleToolboxForMac: 91c824d21e85b31c2aae9bb011c5027c9b4e738f
+  nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
+  Nimble: 415e3aa3267e7bc2c96b05fa814ddea7bb686a29
+  Protobuf: 0fc0ad8bec688b2a3017a139953e01374fedbd5f
+  Quick: dafc587e21eed9f4cab3249b9f9015b0b7a7f71d
+  SSZipArchive: 04547dfa448be5ed7ecbaf7eaf8a6e9eb9b42997
+
+PODFILE CHECKSUM: 90f109d69b53026dc4035ee3e64d0b066f27b5a8
 
 COCOAPODS: 1.5.3
